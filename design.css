@@ -51,18 +51,27 @@
   }
 
   footer {
-    background-color: #000000; /
-    color: #FFFFFF;
+    background-color: #000000; 
+    color: #FFFFFF;            
     text-align: center;
     padding: 10px;
   }
+  
 
   .highlight {
     background-color: #FF7F7F; 
     color: #000000;
     font-weight: bold;
+    width: fit-content
   }
 
+  .highlight {
+    background-color: #FFF200; 
+    color: #000000;
+    font-weight: bold;
+    width: fit-content
+  }
+ 
   #main-title {
     text-shadow: 2px 2px 5px #888888;
   }

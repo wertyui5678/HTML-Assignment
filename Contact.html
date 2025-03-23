@@ -1,12 +1,59 @@
-<form action="#" method="post">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
-
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="message">Message:</label>
-  <textarea id="message" name="message"></textarea>
-
-  <button type="submit">Send</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="design2.css">
+</head>
+<body>
+  <div id="container">
+    <nav>
+      <ul>
+        <li><a href="Main.html">Main</a></li>
+        <li><a href="Overview.html">Overview</a></li>
+        <li><a href="Models.html">Models</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2 class="highlight">Draft your message here</h2>
+        <table border="1" cellpadding="5" width="60%" align="center" title="Luxury Cars">
+          <tr>
+            <th>Name</th>
+            <th>Reason for Message</th>
+            <th>Expected Outcome</th>
+            <th>Email</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <h2 class="highlight">Real Message</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <br>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <small><i>© 2025 Luxury Cars. All Rights Reserved.</i></small>
+      <br>
+      <small><a href="mailto:info@luxurycars.com">Email Us</a></small>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,32 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #FFFFFF;
+  background-color: #FF7f7f;
   color: #000000;
 }
 #container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  gap: 10px; 
 }
-/* Header in red, spanning top */
 header {
-  background-color: #EF1A2D;
+  background-color: #000000;
   color: #FFFFFF;
   text-align: center;
   padding: 20px;
 }
-/* Middle wrapper holds nav + main side by side */
 #middle-wrapper {
   display: flex;
   flex: 1;
-  background-color: rgba(239, 26, 45, 0.1);
 }
-/* Nav from top to bottom in black */
 nav {
   width: 15%;
   background-color: #000000;
@@ -43,15 +35,30 @@ nav li a {
 nav li a:hover {
   background-color: #444444;
 }
-/* Main area with faint red background inherited from parent (#middle-wrapper) */
 main {
-  flex: 1;
+  background-color: #FFFFFF;
   padding: 20px;
+  flex: 1;
 }
-/* Footer in black at the bottom */
+
 footer {
   background-color: #000000;
   color: #FFFFFF;
   text-align: center;
   padding: 20px;
+}
+
+.highlight {
+  background-color: #FFF200; 
+  color: #000000;
+  font-weight: bold;
+  width: fit-content;
+} 
+
+
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
 }
