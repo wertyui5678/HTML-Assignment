@@ -1,60 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact Luxury Cars</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-<div id="container">
+<form action="#" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
 
-  <header>
-    <h1>Contact Us &trade;</h1>
-  </header>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
 
-  <nav>
-    <ul>
-      <li><a href="Main.html">Main</a></li>
-      <li><a href="Overview.html">Overview</a></li>
-      <li><a href="Models.html">Models</a></li>
-      <li><a href="Gallery.html">Gallery</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea>
 
-  <main>
-    <p>Please fill in the form below to get in touch with us regarding any inquiries or feedback.</p>
-    <form action="#" method="post">
-      <table border="1" align="center" cellpadding="4" width="60%" style="background-color: #F8F8F8;" title="Contact Form">
-        <tr>
-          <td><label for="name">Name:</label></td>
-          <td><input type="text" id="name" name="name" required style="width: 100%;"></td>
-        </tr>
-        <tr>
-          <td><label for="email">Email:</label></td>
-          <td><input type="email" id="email" name="email" required style="width: 100%;"></td>
-        </tr>
-        <tr>
-          <td><label for="message">Message:</label></td>
-          <td><textarea id="message" name="message" rows="5" style="width: 100%;"></textarea></td>
-        </tr>
-        <tr>
-          <td colspan="2" style="text-align: center;">
-            <input type="submit" value="Send Message" style="background-color: #333333; color: #FFFFFF; padding: 10px 20px; border: none;">
-          </td>
-        </tr>
-      </table>
-    </form>
-    <p>
-      Alternatively, you can reach us at <a href="mailto:info@luxurycars.com">info@luxurycars.com</a> or visit our 
-      <a href="https://www.example.com" target="_blank">partner site</a> for more details.
-    </p>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Luxury Cars. All Rights Reserved.</p>
-  </footer>
-
-</div>
-</body>
-</html>
+  <button type="submit">Send</button>
+</form>

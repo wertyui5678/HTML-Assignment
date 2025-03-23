@@ -1,102 +1,113 @@
-/* ========== Global Reset/Basic Styling ========== */
-* {
+  /* RESET */
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+  /* BODY */
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #FFFFFF; /* Hex color */
-    color: #000000;           /* Hex color */
-    line-height: 1.6;
-  }
-  
-  /* ========== Container ========== */
-  #container {
-    width: 100%;
-    min-height: 100vh; /* ensure container covers full viewport height */
-    background-color: #F9F9F9; /* Light grayish background */
-    margin: 0 auto; /* center horizontally if you set a max-width */
-    position: relative;
-  }
-  
-  /* ========== Header ========== */
-  header {
-    background-color: #222222; /* Dark gray */
-    color: #FFFFFF;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* ========== Navigation (Left Sidebar) ========== */
-  nav {
-    float: left;
-    width: 15%;               /* Adjust as needed */
-    background-color: #333333; 
-    min-height: 80vh;         /* So nav spans most of the page */
+    background-color: #FF7F7F; /* White background */
+    color: #000000;            /* Black text */
   }
 
-    /* ========== Navigation (Left Sidebar for main) ========== */
-  navsecond {
-    float: left;
-    width: 15%;               /* Adjust as needed */
-    background-color: #333333; 
-    min-height: 80vh;         /* So nav spans most of the page */
+  /* CONTAINER: Flex container for nav + #right */
+  #container {
+    display: flex;
+    min-height: 100vh; /* Full viewport height */
+    gap: 10px;         /* Gap between nav and #right */
   }
-  
+
+  /* NAV: Left side */
+  nav {
+    width: 15%;
+    background-color: #000000; /* Black from snippet 1 */
+  }
+
+  /* NAV UL */
   nav ul {
     list-style-type: none;
   }
-  
+
+  /* NAV LI A */
   nav li a {
     display: block;
-    padding: 10px;
-    color: #FFFFFF;
+    color: #FFFFFF; /* White text on black nav */
     text-decoration: none;
+    padding: 20px; /* Adjust padding as desired */
   }
-  
+
   nav li a:hover {
-    background-color: #444444;
+    background-color: #444444; /* Dark grey hover */
   }
-  
-  /* ========== Main Content (Right side) ========== */
-  main {
-    margin-left: 15%;         /* same as nav width */
+
+  /* #right: Right side container (header, main, footer) */
+  #right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: 10px; /* Gap between header, main, and footer */
+  }
+
+  /* HEADER */
+  header {
+    background-color: #000000; /* Red from snippet 1 */
+    color: #FFFFFF;
     padding: 20px;
-    background-color: #FFFFFF;
-    min-height: 80vh;
+    text-align: center;
   }
-  
-  /* ========== Footer ========== */
+
+  /* MAIN: grows to fill leftover vertical space */
+  main {
+    background-color: #FFFFFF;
+    padding: 20px;
+    flex: 1;
+  }
+
+  /* FOOTER */
   footer {
-    clear: both; /* ensures footer goes below floated nav */
-    background-color: #222222;
+    background-color: #000000; /* Black from snippet 1 */
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
   }
-  
-  /* ========== Tables ========== */
-  table {
-    border-collapse: collapse;
-    margin: 20px 0;
+
+  /* Example highlight class */
+  .highlight {
+    background-color: #FF7F7F; /* Gold color in hex */
+    color: #000000;
+    font-weight: bold;
   }
-  
-  table th,
-  table td {
-    border: 1px solid #CCCCCC;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  /* ========== Example ID and Class Selectors (DS13) ========== */
+
+  /* Example ID selector if needed */
   #main-title {
     text-shadow: 2px 2px 5px #888888;
   }
-  
-  .highlight {
-    color: #FFD700; /* Gold in hex */
-    font-weight: bold;
-  }
-  
+/* IMAGE ROW: Flex container for car images */
+.image-row {
+  display: flex;
+  gap: 20px;       /* Space between the two image containers */
+  margin-top: 20px;
+}
+
+/* Each car container takes up 50% of the width */
+.car-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center images and link within the container */
+}
+
+/* Ensure images fill their container and are consistent in size */
+.car-container img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #EF1A2D; /* Red border as before */
+}
+
+/* Style for the Wikipedia link below the F40 image */
+.wiki-link {
+  margin-top: 10px;
+  text-align: center;
+}
