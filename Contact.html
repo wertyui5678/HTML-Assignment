@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gallery</title>
+  <title>Contact - Luxury Cars</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="design2.css">
 </head>
 <body>
-  <div id="container">
+<div id="container">
+  <header>
+    <h1>Contact Us <i class="fa fa-car" style="font-size:48px;"></i></h1>
+  </header>
+  <div id="middle-wrapper">
     <nav>
       <ul>
         <li><a href="Main.html">Main</a></li>
@@ -19,6 +23,9 @@
     </nav>
     <main>
       <section>
+        <h2 class="highlight">Get in Touch</h2>
+        <p>We would love to hear from you.</p>
+      </section>
         <h2 class="highlight">Draft your message here</h2>
         <table border="1" cellpadding="5" width="60%" align="center" title="Luxury Cars">
           <tr>
@@ -34,26 +41,34 @@
             <td></td>
           </tr>
         </table>
-        <h2 class="highlight">Real Message</h2>
+ 
+      <section>
+        <h2 class="highlight">Contact Form</h2>
         <form action="#" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <br>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <br>
-          <button type="submit">Send</button>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+          
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+          
+          <label for="subject">Subject:</label><br>
+          <input type="text" id="subject" name="subject"><br><br>
+          
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+          
+          <button type="submit">Send Message</button>
         </form>
       </section>
     </main>
-    <footer>
-      <small><i>© 2025 Luxury Cars. All Rights Reserved.</i></small>
-      <br>
-      <small><a href="mailto:info@luxurycars.com">Email Us</a></small>
-    </footer>
   </div>
+  <footer>
+    <img src="giphy (1).gif" alt="gif" width="200" align="center">
+
+    <br>small><i>© 2025 Luxury Cars. All Rights Reserved.</i></small>
+    <br>
+    <small><a href="mailto:info@luxurycars.com">Email Us</a></small>
+  </footer>
+</div>
 </body>
 </html>
